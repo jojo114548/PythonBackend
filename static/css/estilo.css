@@ -1,3 +1,7 @@
+*{
+    font-size: 30px;
+}
+
 form {
     width: 300px;
     margin: auto;
@@ -10,4 +14,8 @@ form {
 
 button, input {
     width: 100%;
+}
+.imgquadrada{
+width: 100px;
+height: 100px;
 }

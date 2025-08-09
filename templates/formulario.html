@@ -2,6 +2,15 @@
 {%  extends  'base.html' %}
 
 {% block conteudo %}
+
+{% set mensagens= get_flashed_messages() %}
+{% if mensagens %}
+<div>
+    {% for mensagem in mensagens %}
+        <p>{{ mensagem }}</p>
+    {% endfor %}
+</div>
+{% endif %}
     <form action="/cadastro-usuario" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="nome">
@@ -17,4 +26,6 @@
         <br><br>
         <button type="submit" style="width: 308px;">Cadastrar</button>
     </form>
+
+
 {% endblock %}
