@@ -1,0 +1,20 @@
+
+{%  extends  'base.html' %}
+
+{% block conteudo %}
+    <form action="/cadastro-usuario" method="POST">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <br><br>
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="idade">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email">
+        <br><br>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+        <br><br>
+        <button type="submit" style="width: 308px;">Cadastrar</button>
+    </form>
+{% endblock %}

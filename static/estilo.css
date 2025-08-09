@@ -1,0 +1,13 @@
+form {
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    padding-left: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: aquamarine;
+}
+
+button, input {
+    width: 100%;
+}
