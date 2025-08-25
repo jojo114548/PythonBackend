@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../static/css/cadastrar-usuario.css">
+</head>
+<body>
+    <div>
+    <a href="/login" class="home">Login</a>
+    </div>
+ 
+       
+    <div class="container">
+  
+      
+   
+
+        <h1>Cadastro</h1>
+
+        <form action="cadastro-usuarios" method="POST">
+         <label for="nome">Nome</label>
+         <input type="text" name="nome" id="nome" required>
+         <br><br>
+         <label for="cpf">CPF</label>
+         <input type="text" name="cpf" id="cpf" required maxlength="14">
+         <br><br>
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email"required>
+         <br><br>
+         <label for="idade">Idade</label>
+         <input type="number" name="idade" id="idade"required>
+         <br><br>
+         <label for="senha">Senha</label>
+         <input type="password" name="senha" id="senha" required min="6">
+         <br><br>
+         <button type="submit">Cadastrar</button>
+        </form>
+    
+    </div>
+       
+</body>
+</html>
