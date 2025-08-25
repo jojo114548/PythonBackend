@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>nomes</title>
+      <link rel="stylesheet" href="../static/css/usuarios.css">
+
+</head>
+<body>
+   <form action="/usuarios_nome/" method="GET">
+  <input type="text" name="nome" placeholder="Digite o nome do usuário" name="nome" id="" >
+  <button type="submit">Buscar</button>
+ 
+      
+          
+  
+</form>
+  
+            {% for i in usuarios %}
+            {% if i.nome == nome %}
+         
+    <table>
+           <h2>Resultados para: {{ nome }}</h2>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td>{{ i.nome }}</td>
+                <td>{{ i.cpf }}</td>
+                <td>{{ i.email }}</td>
+                <td>{{ i.idade }}</td>
+            </tr>
+            {%endif%}
+            {% endfor %}
+        </tbody>
+     
+    
+</body>
+</html>
