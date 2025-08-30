@@ -210,4 +210,4 @@ def admin_area():
         return redirect(url_for("cadastrar_usuario"))
 
 if __name__=='__main__':#inicia em modo desenvolvedor 
-  app.run(debug=True)
+  app.run(host="0.0.0.0",debug=False)
