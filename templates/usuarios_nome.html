@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     
     <title>nomes</title>
-      <link rel="stylesheet" href="../static/css/usuarios.css">
+      <link rel="stylesheet" href="../static/css/usuarios_nome.css">
 
 </head>
 <body>
-   <form action="/usuarios_nome/" method="GET">
+
+    <div class="container">
+
+ 
+   
+    <div class="tabela">
+           
+<form action="/usuarios_nome/" method="GET">
   <input type="text" name="nome" placeholder="Digite o nome do usuário" name="nome" id="" >
   <button type="submit">Buscar</button>
  
@@ -16,7 +23,7 @@
           
   
 </form>
-  
+   
             {% for i in usuarios %}
             {% if i.nome == nome %}
          
@@ -40,7 +47,8 @@
             {%endif%}
             {% endfor %}
         </tbody>
-     
-    
+      </table>
+     </div>
+  </div> 
 </body>
 </html>

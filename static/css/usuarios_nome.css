@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    color: #1D243C;
+    
 }
 body{
 height: auto;
@@ -14,16 +14,54 @@ height: auto;
 
 h2{
     text-align: center;
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 25px;
+    margin:40px auto;
     padding: 20px;
+    color: #1d243cf8;
 }
+.container{
+  width: 100%;
+  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    padding: 10px;
+    border: 2px solid #1d243cdb;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 300px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #1d243cdb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+    .tabela{
+        width: 100%;
+        overflow-x: auto;
+        margin:40px auto;
+     
+    }
   table {
       width: 40%;
-      margin-top: 40px;
+      margin:40px auto;
+      border-collapse: collapse;
       background-color: #FFFFFF;
-         border-radius: 20px;
-           box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
     }
   

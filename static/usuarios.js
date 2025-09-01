@@ -38,8 +38,11 @@ function editarUsuario(id) {
 
     const campos = ["nome", "cpf", "email", "idade"];
    
+
+      const editacao = document.getElementById("editacao");
+      editacao.style.display = "none";
      const btn = document.getElementById("btn");
-     btn.style.display = "block";
+     btn.style.display = "flex";
      
      btn.replaceWith(btn.cloneNode(true));
      const novoBtn = document.getElementById("btn");
@@ -67,7 +70,8 @@ function editarUsuario(id) {
             }))
             .then(data => {
             tdElements.forEach(td => (td.contentEditable = "false"));
-            novoBtn.style.display = "none";
+            novoBtn.style.display = "none"
+            editacao.style.display = "flex";
             })
             .catch(error => {
                 console.error("Erro na atualização:", error);

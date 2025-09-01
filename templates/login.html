@@ -8,24 +8,21 @@
 </head>
 <body>
     <div>
-         <a href="/cadastrar-usuarios" class="home">Criar Conta</a>
+         <a href="/cadastro-usuarios" class="home">Criar Conta</a>
     </div>
     <div class="container">
   <h1>Login</h1>
-    <form action="/acessando/" method="POST">
+    <form action="/login" method="POST">
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" required >
         <br><br>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha" required>
         <br><br>
-      {% set messages =  get_flashed_messages ()%}
-        {% if messages %}
-            <div class="menssagens">
-                <p>{{ messages[0] }}</p>
-                 </div>
-        {% endif %}
-
+          {% if mensagem %}
+     <p style="color:white;font-size: 24px;margin-top: 20px;">{{ mensagem}}</p>     
+      {% endif %}
+      <br><br>
         <button type="submit">Logar</button>
         
     </form>
