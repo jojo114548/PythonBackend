@@ -213,4 +213,4 @@ def admin_area():
         return redirect(url_for("login_get"))
     return "Bem vindo administrador !"
 if __name__=='__main__':#inicia em modo desenvolvedor 
-  app.run(debug=True)
+  app.run(debug=False)
