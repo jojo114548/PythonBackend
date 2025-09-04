@@ -89,7 +89,7 @@ class UsuarioRepository:
 
 @app.route("/") #caminho
 def home():
-   return render_template("login.html") 
+   return render_template("index.html") 
 @app.route("/cadastro-usuarios", methods=["GET"])
 def cadastrar_usuario_get():
     return render_template("cadastrar-usuarios.html")
